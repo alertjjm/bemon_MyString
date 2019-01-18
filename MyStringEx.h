@@ -7,5 +7,6 @@ public:
 	int Find(const char* pszParam);
 	CMyStringEx();
 	~CMyStringEx();
+	int SetString(const char* pszParam);
 };
 
