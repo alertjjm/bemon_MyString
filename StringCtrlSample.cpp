@@ -1,16 +1,10 @@
 #include "stdafx.h"
-#include "MyString.h"
+#include "MyStringEx.h"
 int _tmain(int argc, _TCHAR* argv[]) {
-	CMyString strLeft("Test"), strRight("String");
-	if (strLeft == strRight)
-		cout << "same" << endl;
-	else
-		cout << "different" << endl;
-	strLeft = CMyString("String");
-	if (strLeft != strRight)
-		cout << "different" << endl;
-
-	else
-		cout << "same" << endl;
+	CMyStringEx strTest;
+	strTest.SetString("I am a boy.");
+	cout << strTest << endl;
+	int nIndex = strTest.Find("am");
+	cout << "Index: " << nIndex << endl;
 	return 0;
 }
