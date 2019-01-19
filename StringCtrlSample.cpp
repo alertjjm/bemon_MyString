@@ -1,8 +1,9 @@
 #include "stdafx.h"
 #include "MyStringEx.h"
 int _tmain(int argc, _TCHAR* argv[]) {
-	CMyStringEx strLeft("Hello"), strRight("World");
-	cout << strLeft+strRight << endl;
+	CMyString b("World"), c;
+	c = "hello" + b;
+	cout << c << endl;
 
 	return 0;
 }

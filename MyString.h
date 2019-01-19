@@ -40,6 +40,12 @@ public:
 
 	int GetLength() const;
 	int Append(const char * pszParam);
+	friend CMyString operator+(const char*pszParam, const CMyString &strParam);
+
+	/*
+	friend CMyString operator+(const CMyString &strParam, const char*pszParam);
+	*/
+
 	CMyString operator+(const CMyString & rhs);
 	CMyString& operator+=(const CMyString & rhs);
 	char& operator[](int nIndex);

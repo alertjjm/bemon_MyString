@@ -138,6 +138,18 @@ int CMyString::Append(const char * pszParam)
 
 	return m_nLength;
 }
+CMyString operator+(const char *pszParam, const CMyString &strParam) {
+	CMyString strResult(pszParam);
+	strResult.Append(strParam.m_pszData);
+	return strResult;
+}
+/*
+CMyString operator+(const CMyString &strParam, const char*pszParam) {
+	CMyString strResult(strParam);
+	strResult.Append(pszParam);
+	return strResult;
+}
+*/
 
 CMyString CMyString::operator+(const CMyString & rhs)
 {
