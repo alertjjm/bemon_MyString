@@ -1,10 +1,8 @@
 #include "stdafx.h"
 #include "MyStringEx.h"
 int _tmain(int argc, _TCHAR* argv[]) {
-	CMyStringEx strTest;
-	strTest.SetString("ธÛธÛภฬพฦต้");
-	cout << strTest << endl;
-	strTest.SetString("Hello");
-	cout << strTest << endl;
+	CMyStringEx strLeft("Hello"), strRight("World");
+	cout << strLeft+strRight << endl;
+
 	return 0;
 }

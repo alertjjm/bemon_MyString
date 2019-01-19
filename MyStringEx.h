@@ -4,6 +4,7 @@ class CMyStringEx :
 	public CMyString
 {
 public:
+	using CMyString::CMyString;
 	int Find(const char* pszParam);
 	CMyStringEx();
 	~CMyStringEx();
